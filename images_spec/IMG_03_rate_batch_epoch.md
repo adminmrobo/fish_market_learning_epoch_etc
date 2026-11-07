@@ -7,7 +7,8 @@
 | 분야 | 1 인공지능 (주) + 2 통계학 (보조) |
 | 시즌 | 기본 |
 | 대결 결과 | F, 차이 2.3%p → 결과 후 표정 doc_judge, asst_spark, fly_arms, robo_sigh |
-| 새로 그릴 그림 | P1 1장 (cover_03) · P2 1장 (thumb_03) · P3 1장 (og_03) |
+| 받은 그림 (2026-11-07) | 표지·썸네일·공유 미리보기 반영 완료, `assets/img/` |
+| 처음 계획한 그림 | P1 1장 (cover_03) · P2 1장 (thumb_03) · P3 1장 (og_03) |
 | 재사용 | 표정 14키, 모두 캐릭터 팩 1.3에 있음 |
 | 그림이 없을 때 | 캐릭터 팩 그림 + CSS 대체 표지로 이미 완성 상태 |
 
@@ -65,7 +66,7 @@
     1920,
     1080
    ],
-   "status": "new",
+   "status": "done",
    "priority": "P1",
    "slot": "cover",
    "fallback": "css-pixel-four",
@@ -78,7 +79,7 @@
     600,
     400
    ],
-   "status": "new",
+   "status": "done",
    "priority": "P2",
    "slot": "index-card",
    "fallback": "color-card",
@@ -91,7 +92,7 @@
     1200,
     630
    ],
-   "status": "new",
+   "status": "done",
    "priority": "P3",
    "slot": "og",
    "fallback": null,

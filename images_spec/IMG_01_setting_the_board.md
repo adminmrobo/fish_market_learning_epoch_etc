@@ -7,7 +7,8 @@
 | 분야 | 1 인공지능 (주) + 2 통계학 (보조) |
 | 시즌 | 기본 |
 | 대결 | k를 무엇으로 고를까? → 결과 X (주판봇 실격, 데이터 누수). 봉인 점수 초파리 77.4% · 주판봇 76.5%, 차이 0.9%p |
-| 새로 그릴 그림 | P1 1장 (cover_01) · P2 1장 (thumb_01) · P3 2장 (bg_01, og_01) |
+| 받은 그림 (2026-11-07) | 표지·썸네일·공유 미리보기 반영 완료, `assets/img/` |
+| 처음 계획한 그림 | P1 1장 (cover_01) · P2 1장 (thumb_01) · P3 2장 (bg_01, og_01) |
 | 재사용 | 표정 15키 모두 캐릭터 팩 1.3에 있음 (공용 — IMG_00_index.md 참조) |
 | 그림이 없을 때 | 페이지는 캐릭터 팩 그림 + CSS 대체 표지로 이미 완성 상태 |
 
@@ -96,10 +97,10 @@ cover_01을 받은 뒤 잘라 만든다. thumb_01은 3:2(600×400, 봉투와 네
   "season": "default",
   "duel": {"result": "X", "gap": 0.009},
   "images": [
-    {"key":"cover_01","plate":"L","size":[1920,1080],"status":"new","priority":"P1","slot":"cover","fallback":"css-pixel-four","alt":"밤의 연구실 측정대 위에 일곱 색 물고기 카드 무더기가 놓이고, 조수가 한 무더기를 봉투에 봉인하는 동안 초파리 연구원은 돋보기로 카드를 살피고 주판봇은 봉투를 엿보려 하며 박사가 벽의 표적지를 가리키는 표지"},
-    {"key":"bg_01","plate":"F","size":[1920,720],"status":"new","priority":"P3","slot":"hero-bg","fallback":"cover_01","alt":"일곱 색 카드 무더기와 봉인 봉투 상자가 놓인 밤의 연구실 측정대"},
-    {"key":"thumb_01","plate":"I","size":[600,400],"status":"new","priority":"P2","slot":"index-card","fallback":"color-card","alt":"Fish Market 연구실 1장 판 짜기"},
-    {"key":"og_01","plate":"K","size":[1200,630],"status":"new","priority":"P3","slot":"og","fallback":null,"alt":"Fish Market 연구실 1장 판 짜기"},
+    {"key":"cover_01","plate":"L","size":[1920,1080],"status":"done","priority":"P1","slot":"cover","fallback":"css-pixel-four","alt":"밤의 연구실 측정대 위에 일곱 색 물고기 카드 무더기가 놓이고, 조수가 한 무더기를 봉투에 봉인하는 동안 초파리 연구원은 돋보기로 카드를 살피고 주판봇은 봉투를 엿보려 하며 박사가 벽의 표적지를 가리키는 표지"},
+    {"key":"bg_01","plate":"F","size":[1920,720],"status":"done","priority":"P3","slot":"hero-bg","fallback":"cover_01","alt":"일곱 색 카드 무더기와 봉인 봉투 상자가 놓인 밤의 연구실 측정대"},
+    {"key":"thumb_01","plate":"I","size":[600,400],"status":"done","priority":"P2","slot":"index-card","fallback":"color-card","alt":"Fish Market 연구실 1장 판 짜기"},
+    {"key":"og_01","plate":"K","size":[1200,630],"status":"done","priority":"P3","slot":"og","fallback":null,"alt":"Fish Market 연구실 1장 판 짜기"},
     {"key":"doc_think","plate":"A","status":"reuse","slot":"hero-dialog","alt":""},
     {"key":"doc_front","plate":"A","status":"reuse","slot":"cast,map,outro","alt":""},
     {"key":"doc_magic","plate":"A","status":"reuse","slot":"lv5","alt":""},
