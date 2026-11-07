@@ -1,0 +1,977 @@
+{
+ "version": "0.2+fishmarket",
+ "note": "KG_00_registry.json 추가분 (Fish Market 연구실 1~5장)",
+ "entries": [
+  {
+   "id": "lab:dataset/fish-market",
+   "type": "Dataset",
+   "label_ko": "Fish Market 데이터",
+   "label_en": "Fish Market dataset",
+   "pages": [
+    "fishmarket_01",
+    "fishmarket_02",
+    "fishmarket_03",
+    "fishmarket_04",
+    "fishmarket_05"
+   ],
+   "domain": [
+    "ai",
+    "stats"
+   ]
+  },
+  {
+   "id": "lab:concept/data-inspection",
+   "type": "Concept",
+   "label_ko": "데이터 검수",
+   "label_en": "data inspection",
+   "pages": [
+    "fishmarket_01"
+   ],
+   "domain": [
+    "ai",
+    "stats"
+   ]
+  },
+  {
+   "id": "lab:concept/outlier",
+   "type": "Concept",
+   "label_ko": "이상값",
+   "label_en": "outlier",
+   "pages": [
+    "fishmarket_01"
+   ],
+   "domain": [
+    "ai",
+    "stats"
+   ]
+  },
+  {
+   "id": "lab:concept/problem-definition",
+   "type": "Concept",
+   "label_ko": "문제 정의",
+   "label_en": "problem definition",
+   "pages": [
+    "fishmarket_01"
+   ],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:task/regression",
+   "type": "Task",
+   "label_ko": "회귀",
+   "label_en": "regression",
+   "pages": [
+    "fishmarket_01"
+   ],
+   "domain": [
+    "ai",
+    "stats"
+   ]
+  },
+  {
+   "id": "lab:task/classification",
+   "type": "Task",
+   "label_ko": "분류",
+   "label_en": "classification",
+   "pages": [
+    "fishmarket_01"
+   ],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:method/linear-regression",
+   "type": "Method",
+   "label_ko": "선형 회귀",
+   "label_en": "linear regression",
+   "pages": [
+    "fishmarket_01"
+   ],
+   "domain": [
+    "ai",
+    "stats",
+    "econ"
+   ]
+  },
+  {
+   "id": "lab:concept/feature-transformation",
+   "type": "Concept",
+   "label_ko": "입력 변환 (2차항·로그)",
+   "label_en": "feature transformation",
+   "pages": [
+    "fishmarket_01"
+   ],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:metric/rmse",
+   "type": "Metric",
+   "label_ko": "RMSE",
+   "label_en": "root mean squared error",
+   "pages": [
+    "fishmarket_01"
+   ],
+   "domain": [
+    "ai",
+    "stats"
+   ]
+  },
+  {
+   "id": "lab:metric/accuracy",
+   "type": "Metric",
+   "label_ko": "정확도",
+   "label_en": "accuracy",
+   "pages": [
+    "fishmarket_01",
+    "fishmarket_02",
+    "fishmarket_03"
+   ],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:method/knn",
+   "type": "Method",
+   "label_ko": "KNN (k-최근접 이웃)",
+   "label_en": "k-nearest neighbors",
+   "pages": [
+    "fishmarket_01",
+    "fishmarket_02",
+    "fishmarket_04",
+    "fishmarket_05"
+   ],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:concept/standardization",
+   "type": "Concept",
+   "label_ko": "표준화",
+   "label_en": "standardization",
+   "pages": [
+    "fishmarket_01",
+    "fishmarket_02"
+   ],
+   "domain": [
+    "ai",
+    "stats"
+   ]
+  },
+  {
+   "id": "lab:concept/training-score-trap",
+   "type": "Concept",
+   "label_ko": "훈련 점수의 함정",
+   "label_en": "training-score trap",
+   "pages": [
+    "fishmarket_01"
+   ],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:concept/overfitting",
+   "type": "Concept",
+   "label_ko": "과적합",
+   "label_en": "overfitting",
+   "pages": [
+    "fishmarket_01",
+    "fishmarket_03"
+   ],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:concept/train-test-split",
+   "type": "Concept",
+   "label_ko": "훈련·시험 분할",
+   "label_en": "train-test split",
+   "pages": [
+    "fishmarket_01"
+   ],
+   "domain": [
+    "ai",
+    "stats"
+   ]
+  },
+  {
+   "id": "lab:concept/test-set",
+   "type": "Concept",
+   "label_ko": "시험 데이터",
+   "label_en": "test set",
+   "pages": [
+    "fishmarket_01"
+   ],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:concept/stratified-sampling",
+   "type": "Concept",
+   "label_ko": "층화 추출",
+   "label_en": "stratified sampling",
+   "pages": [
+    "fishmarket_01"
+   ],
+   "domain": [
+    "ai",
+    "stats"
+   ]
+  },
+  {
+   "id": "lab:concept/random-state",
+   "type": "Concept",
+   "label_ko": "random_state (시작 번호)",
+   "label_en": "random seed (random_state)",
+   "pages": [
+    "fishmarket_01",
+    "fishmarket_04"
+   ],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:concept/sampling-variability",
+   "type": "Concept",
+   "label_ko": "작은 시험의 흔들림",
+   "label_en": "sampling variability of the test score",
+   "pages": [
+    "fishmarket_01"
+   ],
+   "domain": [
+    "ai",
+    "stats"
+   ]
+  },
+  {
+   "id": "lab:method/cross-validation",
+   "type": "Method",
+   "label_ko": "교차검증",
+   "label_en": "cross-validation",
+   "pages": [
+    "fishmarket_01",
+    "fishmarket_04"
+   ],
+   "domain": [
+    "ai",
+    "stats"
+   ]
+  },
+  {
+   "id": "lab:concept/validation",
+   "type": "Concept",
+   "label_ko": "검증",
+   "label_en": "validation",
+   "pages": [
+    "fishmarket_01"
+   ],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:concept/hyperparameter",
+   "type": "Concept",
+   "label_ko": "하이퍼파라미터",
+   "label_en": "hyperparameter",
+   "pages": [
+    "fishmarket_01",
+    "fishmarket_03",
+    "fishmarket_04"
+   ],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:concept/parameter",
+   "type": "Concept",
+   "label_ko": "파라미터",
+   "label_en": "parameter",
+   "pages": [
+    "fishmarket_01"
+   ],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:concept/data-leakage",
+   "type": "Concept",
+   "label_ko": "데이터 누수",
+   "label_en": "data leakage",
+   "pages": [
+    "fishmarket_01",
+    "fishmarket_03",
+    "fishmarket_04"
+   ],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:concept/optimization-layers",
+   "type": "Concept",
+   "label_ko": "최적화의 네 층위",
+   "label_en": "four layers of optimization",
+   "pages": [
+    "fishmarket_01",
+    "fishmarket_02"
+   ],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:work/pyae2019fishmarket",
+   "type": "Work",
+   "label_ko": "Fish market",
+   "label_en": "Fish market",
+   "pages": [
+    "fishmarket_01"
+   ]
+  },
+  {
+   "id": "lab:work/park2020hongong",
+   "type": "Work",
+   "label_ko": "혼자 공부하는 머신러닝+딥러닝",
+   "label_en": "혼자 공부하는 머신러닝+딥러닝",
+   "pages": [
+    "fishmarket_01"
+   ]
+  },
+  {
+   "id": "lab:work/pedregosa2011sklearn",
+   "type": "Work",
+   "label_ko": "Scikit-learn: Machine Learning in Python",
+   "label_en": "Scikit-learn: Machine Learning in Python",
+   "pages": [
+    "fishmarket_01"
+   ]
+  },
+  {
+   "id": "lab:work/kohavi1995cv",
+   "type": "Work",
+   "label_ko": "A Study of Cross-Validation and Bootstrap for Accuracy Estimation and Model Selection",
+   "label_en": "A Study of Cross-Validation and Bootstrap for Accuracy Estimation and Model Selection",
+   "pages": [
+    "fishmarket_01"
+   ]
+  },
+  {
+   "id": "lab:concept/loss-function",
+   "type": "Concept",
+   "label_ko": "손실 함수",
+   "label_en": "loss function",
+   "pages": [
+    "fishmarket_02"
+   ],
+   "domain": [
+    "ai",
+    "stats"
+   ]
+  },
+  {
+   "id": "lab:metric/mse",
+   "type": "Metric",
+   "label_ko": "MSE (평균 제곱 오차)",
+   "label_en": "mean squared error",
+   "pages": [
+    "fishmarket_02"
+   ],
+   "domain": [
+    "ai",
+    "stats"
+   ]
+  },
+  {
+   "id": "lab:concept/coefficient",
+   "type": "Concept",
+   "label_ko": "계수 (가중치)",
+   "label_en": "coefficient (weight)",
+   "pages": [
+    "fishmarket_02"
+   ],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:concept/loss-bowl",
+   "type": "Concept",
+   "label_ko": "손실 그릇 (지형)",
+   "label_en": "loss landscape",
+   "pages": [
+    "fishmarket_02"
+   ],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:concept/step-vs-slope",
+   "type": "Concept",
+   "label_ko": "계단과 비탈",
+   "label_en": "step vs slope",
+   "pages": [
+    "fishmarket_02"
+   ],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:concept/cross-entropy-loss",
+   "type": "Concept",
+   "label_ko": "크로스 엔트로피",
+   "label_en": "cross-entropy loss",
+   "pages": [
+    "fishmarket_02",
+    "fishmarket_03"
+   ],
+   "domain": [
+    "ai",
+    "stats"
+   ]
+  },
+  {
+   "id": "lab:concept/softmax",
+   "type": "Concept",
+   "label_ko": "소프트맥스",
+   "label_en": "softmax",
+   "pages": [
+    "fishmarket_02"
+   ],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:method/logistic-regression",
+   "type": "Method",
+   "label_ko": "로지스틱 회귀",
+   "label_en": "logistic regression",
+   "pages": [
+    "fishmarket_02",
+    "fishmarket_04",
+    "fishmarket_05"
+   ],
+   "domain": [
+    "ai",
+    "stats"
+   ]
+  },
+  {
+   "id": "lab:concept/confident-error",
+   "type": "Concept",
+   "label_ko": "자신 있게 틀림",
+   "label_en": "confident error",
+   "pages": [
+    "fishmarket_02"
+   ],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:concept/gradient",
+   "type": "Concept",
+   "label_ko": "기울기",
+   "label_en": "gradient",
+   "pages": [
+    "fishmarket_02"
+   ],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:method/gradient-descent",
+   "type": "Method",
+   "label_ko": "경사하강법",
+   "label_en": "gradient descent",
+   "pages": [
+    "fishmarket_02"
+   ],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:concept/learning-rate",
+   "type": "Concept",
+   "label_ko": "학습률",
+   "label_en": "learning rate",
+   "pages": [
+    "fishmarket_02",
+    "fishmarket_03"
+   ],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:method/sgd",
+   "type": "Method",
+   "label_ko": "SGD (확률적 경사하강법)",
+   "label_en": "stochastic gradient descent",
+   "pages": [
+    "fishmarket_02",
+    "fishmarket_03"
+   ],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:method/newton",
+   "type": "Method",
+   "label_ko": "뉴턴법",
+   "label_en": "Newton method",
+   "pages": [
+    "fishmarket_02"
+   ],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:concept/engine-vs-model",
+   "type": "Concept",
+   "label_ko": "같은 모형, 다른 엔진",
+   "label_en": "same model, different engine",
+   "pages": [
+    "fishmarket_02"
+   ],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:concept/oscillation",
+   "type": "Concept",
+   "label_ko": "출렁임 (톱니 곡선)",
+   "label_en": "oscillation",
+   "pages": [
+    "fishmarket_03"
+   ],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:concept/batch-size",
+   "type": "Concept",
+   "label_ko": "배치 크기",
+   "label_en": "batch size",
+   "pages": [
+    "fishmarket_03"
+   ],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:concept/update-count",
+   "type": "Concept",
+   "label_ko": "업데이트 횟수",
+   "label_en": "number of updates",
+   "pages": [
+    "fishmarket_03"
+   ],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:concept/gradient-noise",
+   "type": "Concept",
+   "label_ko": "배치 기울기의 흔들림",
+   "label_en": "gradient noise",
+   "pages": [
+    "fishmarket_03"
+   ],
+   "domain": [
+    "ai",
+    "stats"
+   ]
+  },
+  {
+   "id": "lab:concept/epoch",
+   "type": "Concept",
+   "label_ko": "에포크",
+   "label_en": "epoch",
+   "pages": [
+    "fishmarket_03"
+   ],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:method/early-stopping",
+   "type": "Method",
+   "label_ko": "조기 종료",
+   "label_en": "early stopping",
+   "pages": [
+    "fishmarket_03"
+   ],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:concept/train-test-gap",
+   "type": "Concept",
+   "label_ko": "훈련·시험 손실 간격",
+   "label_en": "train-test loss gap",
+   "pages": [
+    "fishmarket_03"
+   ],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:concept/knob-interaction",
+   "type": "Concept",
+   "label_ko": "손잡이의 상호작용",
+   "label_en": "interaction of knobs",
+   "pages": [
+    "fishmarket_03"
+   ],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:method/grid-search",
+   "type": "Method",
+   "label_ko": "격자 탐색",
+   "label_en": "grid search",
+   "pages": [
+    "fishmarket_03"
+   ],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:concept/split-variability",
+   "type": "Concept",
+   "label_ko": "분할에 따른 흔들림",
+   "label_en": "split-to-split variability",
+   "pages": [
+    "fishmarket_03",
+    "fishmarket_04",
+    "fishmarket_05"
+   ],
+   "domain": [
+    "ai",
+    "stats"
+   ]
+  },
+  {
+   "id": "lab:concept/regularization",
+   "type": "Concept",
+   "label_ko": "규제",
+   "label_en": "regularization",
+   "pages": [
+    "fishmarket_04"
+   ],
+   "domain": [
+    "ai",
+    "stats"
+   ]
+  },
+  {
+   "id": "lab:concept/underfitting",
+   "type": "Concept",
+   "label_ko": "과소적합",
+   "label_en": "underfitting",
+   "pages": [
+    "fishmarket_04"
+   ],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:method/svc",
+   "type": "Method",
+   "label_ko": "SVC",
+   "label_en": "support vector classifier",
+   "pages": [
+    "fishmarket_04"
+   ],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:concept/kernel",
+   "type": "Concept",
+   "label_ko": "kernel",
+   "label_en": "kernel",
+   "pages": [
+    "fishmarket_04"
+   ],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:concept/ratio-feature",
+   "type": "Concept",
+   "label_ko": "높이 ÷ 길이 비율",
+   "label_en": "height-to-length ratio",
+   "pages": [
+    "fishmarket_04"
+   ],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:concept/feature-engineering",
+   "type": "Concept",
+   "label_ko": "변수 만들기 (Phase #3)",
+   "label_en": "feature engineering",
+   "pages": [
+    "fishmarket_04"
+   ],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:concept/retune-after-features",
+   "type": "Concept",
+   "label_ko": "변수 뒤 손잡이 다시 맞추기",
+   "label_en": "re-tune after changing features",
+   "pages": [
+    "fishmarket_04"
+   ],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:metric/standard-deviation",
+   "type": "Metric",
+   "label_ko": "표준편차",
+   "label_en": "standard deviation",
+   "pages": [
+    "fishmarket_04"
+   ],
+   "domain": [
+    "stats"
+   ]
+  },
+  {
+   "id": "lab:concept/ensemble",
+   "type": "Concept",
+   "label_ko": "앙상블",
+   "label_en": "ensemble",
+   "pages": [
+    "fishmarket_05"
+   ],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:method/voting",
+   "type": "Method",
+   "label_ko": "보팅",
+   "label_en": "voting",
+   "pages": [
+    "fishmarket_05"
+   ],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:concept/error-diversity",
+   "type": "Concept",
+   "label_ko": "서로 다르게 틀리기",
+   "label_en": "error diversity",
+   "pages": [
+    "fishmarket_05"
+   ],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:method/bagging",
+   "type": "Method",
+   "label_ko": "배깅·페이스팅",
+   "label_en": "bagging and pasting",
+   "pages": [
+    "fishmarket_05"
+   ],
+   "domain": [
+    "ai",
+    "stats"
+   ]
+  },
+  {
+   "id": "lab:concept/bootstrap",
+   "type": "Concept",
+   "label_ko": "부트스트랩",
+   "label_en": "bootstrap",
+   "pages": [
+    "fishmarket_05"
+   ],
+   "domain": [
+    "ai",
+    "stats"
+   ]
+  },
+  {
+   "id": "lab:concept/variance",
+   "type": "Concept",
+   "label_ko": "분산 (흔들림)",
+   "label_en": "variance",
+   "pages": [
+    "fishmarket_05"
+   ],
+   "domain": [
+    "ai",
+    "stats"
+   ]
+  },
+  {
+   "id": "lab:method/decision-tree",
+   "type": "Method",
+   "label_ko": "결정나무",
+   "label_en": "decision tree",
+   "pages": [
+    "fishmarket_05"
+   ],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:method/random-forest",
+   "type": "Method",
+   "label_ko": "랜덤 포레스트",
+   "label_en": "random forest",
+   "pages": [
+    "fishmarket_05"
+   ],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:method/boosting",
+   "type": "Method",
+   "label_ko": "부스팅 (AdaBoost)",
+   "label_en": "boosting (AdaBoost)",
+   "pages": [
+    "fishmarket_05"
+   ],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:concept/decision-stump",
+   "type": "Concept",
+   "label_ko": "결정 그루터기",
+   "label_en": "decision stump",
+   "pages": [
+    "fishmarket_05"
+   ],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:concept/bias",
+   "type": "Concept",
+   "label_ko": "편향",
+   "label_en": "bias",
+   "pages": [
+    "fishmarket_05"
+   ],
+   "domain": [
+    "ai",
+    "stats"
+   ]
+  },
+  {
+   "id": "lab:method/stacking",
+   "type": "Method",
+   "label_ko": "스태킹",
+   "label_en": "stacking",
+   "pages": [
+    "fishmarket_05"
+   ],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:concept/tuning-vs-ensemble",
+   "type": "Concept",
+   "label_ko": "튜닝 대 앙상블",
+   "label_en": "tuning vs ensemble",
+   "pages": [
+    "fishmarket_05"
+   ],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:work/breiman1996bagging",
+   "type": "Work",
+   "label_ko": "Bagging Predictors",
+   "label_en": "Bagging Predictors",
+   "pages": []
+  },
+  {
+   "id": "lab:work/freund1997adaboost",
+   "type": "Work",
+   "label_ko": "A Decision-Theoretic Generalization of On-Line Learning and an Application to Boosting",
+   "label_en": "A Decision-Theoretic Generalization of On-Line Learning and an Application to Boosting",
+   "pages": []
+  },
+  {
+   "id": "lab:work/wolpert1992stacking",
+   "type": "Work",
+   "label_ko": "Stacked Generalization",
+   "label_en": "Stacked Generalization",
+   "pages": []
+  },
+  {
+   "id": "lab:work/zhu2009samme",
+   "type": "Work",
+   "label_ko": "Multi-class AdaBoost",
+   "label_en": "Multi-class AdaBoost",
+   "pages": []
+  },
+  {
+   "id": "lab:work/robbins1951sa",
+   "type": "Work",
+   "label_ko": "A Stochastic Approximation Method",
+   "label_en": "A Stochastic Approximation Method",
+   "pages": []
+  }
+ ]
+}
