@@ -33,7 +33,7 @@
 |---|---|
 | `*.html` | 해설 페이지 6개 (각각 파일 하나로 열림, 외부 요청은 글꼴뿐) |
 | `experiments/` | 데이터 `fish.csv`, 실험 스크립트(scikit-learn) 2개, Genspark용 슬라이드 원고 |
-| `images_spec/` | 표지 지시문 `COVER_*.md`(Genspark에 붙여 넣기)와 이미지 제작 명세서 `IMG_*.md` |
+| `images_spec/` | 표지 지시문 `COVER_*.md`(Genspark에 붙여 넣기), 이미지 제작 명세서 `IMG_*.md`, 4컷 만화 지시문 `COMIC_*.md` |
 | `data/` | 시리즈 개념·문헌 등록부 추가분 (`KG_00_registry.json`에 합칠 것) |
 
 ## 숫자의 출처

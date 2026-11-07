@@ -167,6 +167,7 @@ footer{padding:40px 0 90px;color:var(--muted);font-size:14px}
 .seriesnav a{text-decoration:none}
 @media (max-width:520px){.kpis{grid-template-columns:repeat(2,1fr)!important}}
 </style>
+<style>.comic .comic-img img{display:block;width:100%;height:auto;border-radius:12px}.cgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.cut{position:relative;border:2px solid var(--rule);border-radius:12px;padding:30px 10px 10px;min-height:220px;display:flex;flex-direction:column;align-items:center;gap:6px;overflow:hidden}.cut.day{background:linear-gradient(#bfe3ff,#d9f5c9)}.cut.dusk{background:linear-gradient(#5a3a7a,#e0865a)}.cut.lab{background:var(--panel2)}.cut .no{position:absolute;top:6px;left:8px;font-weight:700;font-size:13px;background:#13141f;color:#fff;border-radius:6px;padding:0 7px}.cut svg.npc{width:56px;height:76px}.cut svg.prop{width:46px;height:46px;position:absolute;left:10px;bottom:10px}.cut img.cw{width:64px;height:64px;object-fit:contain}.cut .trio{display:flex;gap:4px}.cut .bub{margin:0;background:#fff;color:#13141f;border-radius:12px;padding:6px 10px;font-size:14px;line-height:1.4;max-width:92%;box-shadow:0 1px 3px rgba(0,0,0,.25)}.cut .bub.l{align-self:flex-start}.cut .cap{margin:auto 0 0;font-size:12.5px;background:rgba(19,20,31,.82);color:#fff;border-radius:6px;padding:2px 8px;z-index:1}@media (max-width:520px){.cgrid{grid-template-columns:1fr}}</style>
 </head><body>
 <div id="prog"></div>
 <nav class="top" aria-label="섹션 바로가기"><a class="logo" href="index.html" style="color:var(--gfp)">Fish Market 연구실 · 2장</a><a href="#why">왜</a><a href="#lv1">① 비용</a><a href="#lv2">② 계단</a><a href="#lv3">③ 확신</a><a href="#lv4">④ 영점</a><a href="#lv5">⑤ 상자</a><a href="#lv6">⑥ 움직임</a><a href="#duel">대결</a><a href="#sum">정리</a><a href="#kg">지식 색인</a><a href="#export">꾸러미</a></nav>
@@ -273,6 +274,30 @@ footer{padding:40px 0 90px;color:var(--muted);font-size:14px}
   <div class="explain"><h4>초보자 풀이</h4><ol><li>같은 정확도라도 손실은 다를 수 있습니다. 로지스틱 회귀와 SVC는 둘 다 82.5%지만, 정답에 더 높은 확률을 준 SVC의 손실이 작습니다.</li><li>KNN은 확률이 "이웃 5마리 중 몇 마리"라 0%, 20%처럼 끊어집니다. 정답 어종 이웃이 하나도 없으면 정답 확률이 0이 되고, 아주 큰 벌점이 붙습니다.</li><li>그래서 KNN은 정확도는 비슷한데 손실이 유독 큽니다. 자신 있게 틀린 것이 가장 크게 혼납니다.</li></ol><p class="lim"><b>이 칸의 한계:</b> 손실이라는 지형은 생겼습니다. 이제 그 지형 위에서 계수를 어떻게 옮길지가 남았습니다.</p></div>
   <details class="math"><summary>수식으로 보기</summary><p>소프트맥스: p_c = e^(z_c) / Σ_k e^(z_k), z_c = b_c + Σ_j w_jc x_j. 크로스 엔트로피 L = −(1/n) Σᵢ log p_(yᵢ). 정답 확률 0을 피하려고 계산할 때는 아주 작은 값(약 2.2×10⁻¹⁶)으로 잘라 씁니다(scikit-learn과 같은 방식).</p><p>이 페이지의 로지스틱 회귀는 scikit-learn <code>LogisticRegression()</code>과 같은 목적식(C·Σ손실 + ½‖W‖²)을 뉴턴법으로 풀어 같은 값(82.5%, 0.590)을 냅니다. SVC 값은 이 페이지에서 계산하지 않고 실험 스크립트(scikit-learn)의 결과를 옮겼습니다.</p></details>
   <div class="say" data-who="asst"><img class="who" data-who="asst" data-mood="report" data-img="asst_report" alt="" aria-hidden="true"><div><b class="name">조수 하루</b><p>Pike는 몸이 길쭉해서 정답 확률 0.997, 손실 0.003이에요. Whitefish는 훈련에 4마리뿐이라 0.102밖에 못 받았어요.</p></div></div>
+  <section class="panel comic" id="comic3" aria-labelledby="cm3h">
+    <h3 id="cm3h">4컷 만화 — 확신에 찬 오답 <span class="stamp-note">설명용 그림</span></h3>
+    <picture class="comic-img" hidden><img src="assets/img/comic_02_mushroom.webp" width="1600" height="1600" decoding="async" data-img="comic_02_mushroom"
+      alt="4컷 만화. 1컷 NPC 휴머노이드 봇이 버섯을 먹어도 되냐는 물음에 엄지를 들며 안전하다고 답한다. 2컷 노을 진 들판의 비석 옆에서 봇이 독버섯이었다며 사과한다. 3컷 주판봇이 확신을 가지고 틀리면 더 혼나야 한다고 화를 낸다. 4컷 박사, 조수, 초파리 연구원이 바로 폐기 처분해야 한다고 외친다."
+      onload="this.parentNode.hidden=false;document.getElementById('comic3f').hidden=true"></picture>
+    <div class="cgrid" id="comic3f">
+      <div class="cut day"><span class="no">1</span><svg class="prop" viewBox="0 0 60 60" aria-hidden="true"><path d="M6 30 Q30 2 54 30 Z" fill="#8a5a3c"/><circle cx="20" cy="22" r="3" fill="#e8d2b0"/><circle cx="36" cy="16" r="2.5" fill="#e8d2b0"/><rect x="25" y="30" width="10" height="24" rx="4" fill="#e8d2b0"/></svg><svg class="npc" viewBox="0 0 60 80" aria-hidden="true"><rect x="14" y="4" width="32" height="26" rx="8" fill="#cfd6e6"/><rect x="19" y="12" width="22" height="9" rx="4" fill="#2b3550"/><circle cx="25" cy="16.5" r="2.3" fill="#7ee0ff"/><circle cx="35" cy="16.5" r="2.3" fill="#7ee0ff"/><line x1="30" y1="4" x2="30" y2="0" stroke="#cfd6e6" stroke-width="2"/><rect x="12" y="32" width="36" height="30" rx="6" fill="#e9edf5"/><text x="30" y="52" text-anchor="middle" font-size="10" font-weight="700" fill="#5a6a8a">NPC</text><rect x="16" y="62" width="10" height="16" rx="3" fill="#3a4258"/><rect x="34" y="62" width="10" height="16" rx="3" fill="#3a4258"/></svg><p class="bub l">이 버섯 먹어도 돼?</p><p class="bub r">네! 먹어도 안전해요! 👍</p><p class="cap">봇이 독버섯에 준 확률 0.01</p></div>
+      <div class="cut dusk"><span class="no">2</span><svg class="prop" viewBox="0 0 60 60" aria-hidden="true"><path d="M12 58 V24 Q30 2 48 24 V58 Z" fill="#9a8f86"/><text x="30" y="40" text-anchor="middle" font-size="10" font-weight="700" fill="#4a423c">R.I.P</text></svg><svg class="npc" viewBox="0 0 60 80" aria-hidden="true"><rect x="14" y="4" width="32" height="26" rx="8" fill="#cfd6e6"/><rect x="19" y="12" width="22" height="9" rx="4" fill="#2b3550"/><circle cx="25" cy="16.5" r="2.3" fill="#7ee0ff"/><circle cx="35" cy="16.5" r="2.3" fill="#7ee0ff"/><line x1="30" y1="4" x2="30" y2="0" stroke="#cfd6e6" stroke-width="2"/><rect x="12" y="32" width="36" height="30" rx="6" fill="#e9edf5"/><text x="30" y="52" text-anchor="middle" font-size="10" font-weight="700" fill="#5a6a8a">NPC</text><rect x="16" y="62" width="10" height="16" rx="3" fill="#3a4258"/><rect x="34" y="62" width="10" height="16" rx="3" fill="#3a4258"/></svg><p class="bub r">맞아요, 그건 독버섯이에요. 잘못 알려 드려 죄송합니다!</p><p class="cap">정답: 독버섯</p></div>
+      <div class="cut lab"><span class="no">3</span><img class="cw" data-who="robo" data-mood="sigh" data-img="robo_sigh" alt=""><p class="bub r">너는 용서가 안 돼! 이렇게 확신을 가지고 틀리면 더 혼나야 돼!</p><p class="cap">손실 −log 0.01 = 4.61</p></div>
+      <div class="cut lab"><span class="no">4</span><div class="trio"><img class="cw" data-who="doc" data-mood="judge" data-img="doc_judge" alt=""><img class="cw" data-who="asst" data-mood="firm" data-img="asst_firm" alt=""><img class="cw" data-who="fly" data-mood="arms" data-img="fly_arms" alt=""></div><p class="bub r">저렇게 틀리면 바로 폐기 처분 해야지!</p><p class="cap">확률 → 0이면 손실 → ∞</p></div>
+    </div>
+    <h3>확신 오답 벌점표 <span class="real-note">계산값</span></h3>
+    <div class="tw"><table class="tb"><thead><tr><th>정답(독버섯)에 준 확률</th><th>봇의 말투</th><th class="num">손실 −log p</th></tr></thead><tbody>
+      <tr><td>0.5</td><td>"잘 모르겠어요"</td><td class="num">0.69</td></tr>
+      <tr><td>0.1</td><td>"아마 괜찮을 거예요"</td><td class="num">2.30</td></tr>
+      <tr><td>0.01</td><td>"네! 안전해요!"</td><td class="num">4.61</td></tr>
+      <tr><td>0.001</td><td>"100% 안전해요!"</td><td class="num">6.91</td></tr>
+      <tr><td>→ 0</td><td>"절대 독 아니에요!"</td><td class="num">→ ∞ (폐기 처분)</td></tr></tbody></table></div>
+    <div class="explain"><h4>초보자 풀이</h4><ol>
+      <li>확률이 10분의 1로 줄 때마다 벌점이 2.30씩 더 붙습니다. 제곱 오차 같은 손실은 최대 1에서 멈추지만, 크로스 엔트로피는 끝이 없습니다. 주판봇의 호통이 바로 이 모양입니다.</li>
+      <li>하지만 크로스 엔트로피는 "식용을 독으로 본 실수"(한 끼 손해)와 "독을 식용으로 본 실수"(무덤)를 같은 무게로 셉니다. 대가가 다른 실수는 <b>클래스 가중치</b>(scikit-learn <code>class_weight</code>)나 <b>판정 문턱</b>("독일 확률 5%만 넘어도 먹지 마세요")으로 따로 넣어야 합니다. 경제학으로 치면 비대칭 손실 함수입니다.</li>
+      <li>벌을 한없이 키우면 모형은 모든 버섯을 독이라고 말합니다. 아무도 죽지 않지만 쓸모도 없습니다. 그래서 가중치와 문턱의 세기도 검증 데이터로 고르는 ② 하이퍼파라미터입니다.</li></ol>
+      <p class="lim"><b>만화의 한계:</b> 이 만화의 숫자(0.01)는 설명용입니다. 물고기 데이터에는 "치명적인 오답"이 없어 비대칭 비용을 직접 계산하지 않습니다.</p></div>
+  </section>
   <div class="quiz" data-quiz="lv3"></div>
 </div></section>
 
